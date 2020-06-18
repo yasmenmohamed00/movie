@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+a {
+  color: #fff; }
+
+body {
+  background-color: #212121;
+  color: #f8f8f8; }
+
+.btn-mine {
+  background-color: #24baef;
+  color: #fff; }

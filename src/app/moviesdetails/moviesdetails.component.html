@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-9">
+        <img class="w-100" [src]="imgPrefx+movieD.backdrop_path" alt="">
+        <div class="details">
+            <h3>{{movieD.original_title}}</h3>
+            <p>{{movieD.overview}}</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div *ngFor ='let movie of TopTenMovie' class="topMovie">
+            <img [src]="imgPrefx+movie.poster_path" alt="" class="w-25">
+            <h5>{{movie.title || movie.name}}</h5>
+        </div>
+    </div>
+
+</div>

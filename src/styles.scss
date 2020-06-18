@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+$mainColor: #f8f8f8;
+$backgroundColor: #212121;
+$lightBgColor: #24baef;
+$fontColor:#fff;
+a{
+    color: $fontColor;
+}
+body{
+    background-color: $backgroundColor;
+    color: $mainColor;
+}
+.btn-mine{
+    background-color: $lightBgColor;
+    color: $fontColor;
+    top: 0;
+    right: 20%;
+}

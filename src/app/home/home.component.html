@@ -1,0 +1,16 @@
+<div class="container">
+<div class="row ">
+    <div class="col-md-4 d-flex align-items-center">
+        <h2>Trending Movies <br> Right now</h2>
+    </div>
+   
+    <div *ngFor='let moviestre of trenttingMovie' class="col-md-2 position-relative">
+         <a [routerLink]="['/moviesdetails', moviestre.id ]">
+        <img [src]='imgPrefx+moviestre.poster_path' alt="" class="w-100">
+        <h5>{{moviestre.title || moviestre.name}}</h5>
+        <div class="btn-mine p-2 position-absolute"><h6>{{moviestre.vote_average}}</h6></div>
+        </a>
+    </div>
+
+</div>
+
